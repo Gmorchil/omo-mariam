@@ -19,7 +19,7 @@ body {
 
 header {
   margin: 20px 5px 0 5px;
-  height: 750px;
+  height: 900px;
 }
 
 header .about {
@@ -210,21 +210,24 @@ background-color: white;
 
 @media (max-width: 700px) {
   header .about {
+    height: 900px;
     background-image: url(./img/toile-bleu-hero.webp);
     gap: 0px;
   }
 
-  h1 {
-    flex-direction: column;
-    gap: 0px;
-  }
-  p {
-    font-size: 20px;
-  }
 
-  h1 p {
-    font-size: 40px;
-  }
+h1 {
+  flex-direction: column;
+  gap: 0px;
+}
+
+h1 p {
+  font-size: 35px;
+}
+
+p {
+  font-size: 25px;
+}
 
   /* უკუათვლა */
 

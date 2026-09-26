@@ -75,6 +75,9 @@ p {
   border-radius: 20px;
 }
 
+.title{
+  text-align: center;
+}
 .clock .clockContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

@@ -145,8 +145,8 @@ top: 50%;
   border: none;
   cursor: pointer;
 }
-.locations .action .actionLeft h5 {
-  padding-inline-start: 30px;
+.locations .action .actionLeft {
+  width: 70%;
 }
 
 .time {
@@ -154,6 +154,20 @@ top: 50%;
   flex-direction: row;
   align-items: center;
 }
+
+.actionLeft h1{
+  font-size: 70px;
+}
+
+.time h2{
+  font-size: 40px;
+}
+.locations .action .actionLeft h5 {
+  padding-inline-start: 30px;
+  font-size: 30px;
+}
+
+
 
 .mapContainer {
   display: none;
@@ -263,21 +277,49 @@ p {
     background-image: url(./img/e3f9282f-e260-41b2-bac6-0de65602dfe4.jpeg);
   }
 
-  .locations .action {
-    justify-content: center;
-    flex-direction: column;
-  }
 
-  .locations .action .actionRight {
-    font-size: 30px;
-  }
-  .locations .action .actionLeft h5 {
-    padding-inline-start: 30px;
-  }
+.locations .action .actionRight button {
+  font-size: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.locations .action .actionLeft h5 {
+  padding-inline-start: 30px;
+}
 
-  .time {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+.time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mapContainer {
+  display: none;
+}
+.locations .action {
+
+  flex-direction: column ;
+
+}
+
+.actionLeft h1{
+  font-size: 50px;
+}
+
+.time h2{
+  font-size: 30px;
+}
+.locations .action .actionLeft h5 {
+  font-size: 20px;
+}
+
+iframe{
+    padding: 2.5px;
+    object-fit: contain;
+    width: 590px;
+    height: 350px;
+
+
+}
 }

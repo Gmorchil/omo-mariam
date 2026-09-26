@@ -37,15 +37,19 @@ header .about {
   border-radius: 20px;
 }
 
-h1 {
+.names {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 30px;
+  gap: 0px;
 }
 
-h1 p {
-  font-size: 65px;
+.names p {
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 p {
@@ -216,15 +220,24 @@ background-color: white;
   }
 
 
-h1 {
+.names {
+  display: flex;
   flex-direction: column;
-  gap: 0px;
+  align-items: center;
+  
 }
 
-h1 p {
-  font-size: 35px;
+.names p {
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+p {
+  font-size: 45px;
+}
 p {
   font-size: 25px;
 }
@@ -232,7 +245,7 @@ p {
   /* უკუათვლა */
 
   .clock .clockContainer {
-    gap: 20px;
+    gap: 10px;
   }
 
   .clock .clockContainer .clockBox {

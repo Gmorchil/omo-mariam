@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: ertoba;
+  src: url(./fonts/DM-Ertoba.ttf);
+}
+
+@font-face {
+  font-family: archium;
+  src: url(./fonts/DM-Archium.ttf);
+}
+body {
+  font-family: archium;
+}
+
+header {
+  margin: 20px 5px 0 5px;
+  height: 750px;
+}
+
+header .about {
+  background-image: url(./img/toile-bleu-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  height: 750px;
+  border: none;
+  border-radius: 20px;
+}
+
+h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+h1 p {
+  font-size: 65px;
+}
+
+p {
+  font-size: 45px;
+}
+
+/* უკუათვლა */
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: pink;
+  height: 700px;
+  gap: 150px;
+  background-image: url(./img/10084098-6fbf-41ea-a057-9a6e080b1b1a.jpeg);
+  background-position: center;
+  border: none;
+  margin: 20px 5px;
+  padding-block: 50px;
+  border-radius: 20px;
+}
+
+.clock .clockContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.clock .clockContainer .clockBox {
+  border: 1px solid white;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: palevioletred;
+}
+
+.clock .clockContainer .clockBox .data {
+  font-size: 50px;
+}
+
+.clock .clockContainer div h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clockContainer {
+  position: relative; 
+  padding-block: 0;
+}
+
+.done {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+height: 300px;
+
+}
+
+/*ლოკაცია*/
+
+.locations {
+  border: none;
+  margin: 20px 5px;
+  padding-block: 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-image: url(./img/2.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.locations .action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.locations .action .actionRight button {
+  font-size: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.locations .action .actionLeft h5 {
+  padding-inline-start: 30px;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mapContainer {
+  display: none;
+}
+
+iframe{
+    padding: 2.5px;
+}
+
+/*Intro video*/
+#content {
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+#content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#stage {
+  position: fixed;
+  inset: 0;
+background-color: white;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1.1s ease;
+  overflow: hidden;
+}
+#stage video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+#stage.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 1100px) {
+  h1 {
+    gap: 15px;
+  }
+  p {
+    font-size: 20px;
+  }
+
+  h1 p {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  header .about {
+    background-image: url(./img/toile-bleu-hero.webp);
+    gap: 0px;
+  }
+
+  h1 {
+    flex-direction: column;
+    gap: 0px;
+  }
+  p {
+    font-size: 20px;
+  }
+
+  h1 p {
+    font-size: 40px;
+  }
+
+  /* უკუათვლა */
+
+  .clock .clockContainer {
+    gap: 20px;
+  }
+
+  .clock .clockContainer .clockBox {
+    width: 100px;
+    height: 100px;
+  }
+
+  .clock .clockContainer .clockBox .data {
+    font-size: 40px;
+  }
+
+  /*განრიგი*/
+
+  .locations {
+    background-image: url(./img/e3f9282f-e260-41b2-bac6-0de65602dfe4.jpeg);
+  }
+
+  .locations .action {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .locations .action .actionRight {
+    font-size: 30px;
+  }
+  .locations .action .actionLeft h5 {
+    padding-inline-start: 30px;
+  }
+
+  .time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

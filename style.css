@@ -156,6 +156,7 @@ height: 300px;
 
 iframe{
     padding: 2.5px;
+    object-fit: contain;
 }
 
 /*Intro video*/

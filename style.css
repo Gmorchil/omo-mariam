@@ -19,7 +19,7 @@ body {
 
 header {
   margin: 20px 5px 0 5px;
-  height: 900px;
+  height: 800px;
 }
 
 header .about {
@@ -32,7 +32,7 @@ header .about {
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  height: 750px;
+  height: 800px;
   border: none;
   border-radius: 20px;
 }
@@ -41,15 +41,16 @@ header .about {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0px;
+  gap: 50px;
 }
 
 .names p {
-  font-size: 50px;
+  font-size: 150px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 p {
@@ -65,7 +66,7 @@ p {
   align-items: center;
   background-color: pink;
   height: 700px;
-  gap: 150px;
+  gap: 50px;
   background-image: url(./img/10084098-6fbf-41ea-a057-9a6e080b1b1a.jpeg);
   background-position: center;
   border: none;
@@ -77,7 +78,7 @@ p {
 .clock .clockContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 50px;
 }
 
 .clock .clockContainer .clockBox {
@@ -100,6 +101,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: xx-large
 }
 
 .clockContainer {
@@ -108,12 +110,11 @@ p {
 }
 
 .done {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-height: 300px;
-
+position: absolute;
+left: 50%;
+top: 50%;
+  transform: translate(-50%, -0%);
+  height: 300px;
 }
 
 /*ლოკაცია*/
@@ -214,7 +215,7 @@ background-color: white;
 
 @media (max-width: 700px) {
   header .about {
-    height: 900px;
+    height: 800px;
     background-image: url(./img/toile-bleu-hero.webp);
     gap: 0px;
   }
@@ -224,11 +225,12 @@ background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0;
   
 }
 
 .names p {
-  font-size: 50px;
+  font-size: 80px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -238,9 +240,7 @@ background-color: white;
 p {
   font-size: 45px;
 }
-p {
-  font-size: 25px;
-}
+
 
   /* უკუათვლა */
 
@@ -249,12 +249,12 @@ p {
   }
 
   .clock .clockContainer .clockBox {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 
   .clock .clockContainer .clockBox .data {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   /*განრიგი*/

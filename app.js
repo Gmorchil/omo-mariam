@@ -1,4 +1,4 @@
-let target = new Date("2026-10-31T00:00:00");
+let target = new Date("2026-07-31T00:00:00");
 let timer;
 
 function update() {

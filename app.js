@@ -73,7 +73,6 @@ if (playPromise !== undefined) {
   })
 };
 
-// RSVP form
 var attending = "Joyfully accepts";
 document.querySelectorAll(".choice").forEach(function (el) {
   el.addEventListener("click", function () {
@@ -111,3 +110,5 @@ document.getElementById("rsvpForm").addEventListener("submit", function (e) {
     "Thank you, " + name + " — opening your email app to send the RSVP.";
   confirm.classList.add("show");
 });
+
+

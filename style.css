@@ -17,6 +17,9 @@ body {
   font-family: ertoba;
 }
 
+
+
+
 header {
   margin: 20px 5px 0 5px;
   height: 800px;
@@ -170,7 +173,16 @@ top: 50%;
   font-size: 30px;
 }
 
-
+.custom-audio {
+  width: 100px;
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  position: fixed;
+  bottom: 100px;
+  z-index: 100;
+  color: pink;
+}
 
 .mapContainer {
   display: none;

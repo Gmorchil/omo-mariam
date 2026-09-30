@@ -14,162 +14,167 @@
     />
   </head>
   <body>
-<div id="stage">
-  <video id="introVideo" playsinline muted preload="auto">
-    <source src="./img/gemini_generated_video_ba97afca.mp4">
-  </video>
-</div>
 
-<main id="content">
 
-    <header>
-      <div class="about">
+    <div id="stage">
+      <video id="introVideo" playsinline muted preload="auto">
+        <source src="./img/gemini_generated_video_ba97afca.mp4" />
+      </video>
+    </div>
 
-        <div class="names">
-          <p>ომო</p>
-          <p>&</p>
-          <p>მარიამი</p>
+
+    <audio class="custom-audio" autoplay>
+      <source
+        src="./img/Caribbean.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <main id="content">
+      <header>
+        <div class="about">
+          <div class="names">
+            <p>ომო</p>
+            <p>&</p>
+            <p>მარიამი</p>
+          </div>
+          <p class="date">31.10.2026</p>
         </div>
-        <p class="date">31.10.2026</p>
-      </div>
-    </header>
+      </header>
 
-    <section class="clock">
-      <h1 class="title">ჩვენი ჯადისნური დღის ათვლა დაწყებულია</h1>
-      <div class="clockContainer">
-        <div><h3>დღე</h3></div>
-        <div><h3>საათი</h3></div>
-        <div><h3>წუთი</h3></div>
-        <div><h3>წამი</h3></div>
-        <div class="clockBox"><div class="data" id="days"></div></div>
-        <div class="clockBox"><div class="data" id="hours"></div></div>
-        <div class="clockBox"><div class="data" id="minutes"></div></div>
-        <div class="clockBox"><div class="data" id="seconds"></div></div>
-      </div>
-    </section>
+      <section class="clock">
+        <h1 class="title">ჩვენი ჯადისნური დღის ათვლა დაწყებულია</h1>
+        <div class="clockContainer">
+          <div><h3>დღე</h3></div>
+          <div><h3>საათი</h3></div>
+          <div><h3>წუთი</h3></div>
+          <div><h3>წამი</h3></div>
+          <div class="clockBox"><div class="data" id="days"></div></div>
+          <div class="clockBox"><div class="data" id="hours"></div></div>
+          <div class="clockBox"><div class="data" id="minutes"></div></div>
+          <div class="clockBox"><div class="data" id="seconds"></div></div>
+        </div>
+      </section>
 
-
-    <!--ადგილმდებარეობა-->
-    <article class="locations">
-      <div class="action">
-        <div class="actionLeft">
-          <h1>ჯვრისწერა</h1>
-          <div class="time">
-            <h2>13:30</h2>
-            <h5>საგურამო, წმ. ილია მართლის ტაძარი</h5>
+      <!--ადგილმდებარეობა-->
+      <article class="locations">
+        <div class="action">
+          <div class="actionLeft">
+            <h1>ჯვრისწერა</h1>
+            <div class="time">
+              <h2>13:30</h2>
+              <h5>საგურამო, წმ. ილია მართლის ტაძარი</h5>
+            </div>
+          </div>
+          <div class="actionRight">
+            <button class="mapToggleBtn">
+              <i
+                class="fa-solid fa-circle-chevron-down"
+                id="mapIcon"
+                style="color: rgb(0, 0, 0)"
+              ></i>
+            </button>
+          </div>
+          <div class="mapContainer">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8400.070372241269!2d44.75533632734906!3d41.89558052442122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4044663173acae7b%3A0xb10286d4797e690b!2z4YOs4YObLiDhg5jhg5rhg5jhg5Ag4YOb4YOQ4YOg4YOX4YOa4YOY4YOhIOGDouGDkOGDq-GDkOGDoOGDmA!5e0!3m2!1sen!2sge!4v1790330711006!5m2!1sen!2sge"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
           </div>
         </div>
-        <div class="actionRight">
-          <button class="mapToggleBtn">
-            <i
-              class="fa-solid fa-circle-chevron-down"
-              id="mapIcon"
-              style="color: rgb(0, 0, 0)"
-            ></i>
-          </button>
-        </div>
-        <div class="mapContainer">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8400.070372241269!2d44.75533632734906!3d41.89558052442122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4044663173acae7b%3A0xb10286d4797e690b!2z4YOs4YObLiDhg5jhg5rhg5jhg5Ag4YOb4YOQ4YOg4YOX4YOa4YOY4YOhIOGDouGDkOGDq-GDkOGDoOGDmA!5e0!3m2!1sen!2sge!4v1790330711006!5m2!1sen!2sge"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-          ></iframe>
-        </div>
-      </div>
 
-    <!--ფოტოები-->
+        <!--ფოტოები-->
 
-      <div class="action">
-        <div class="actionLeft">
-          <h1>ფოტოსესია</h1>
-          <div class="time">
-            <h2>14:30</h2>
-            <h5>ილია ჭავჭავაძის საგურამოს სახ. მუზეუმი</h5>
+        <div class="action">
+          <div class="actionLeft">
+            <h1>ფოტოსესია</h1>
+            <div class="time">
+              <h2>14:30</h2>
+              <h5>ილია ჭავჭავაძის საგურამოს სახ. მუზეუმი</h5>
+            </div>
+          </div>
+          <div class="actionRight">
+            <button class="mapToggleBtn">
+              <i
+                class="fa-solid fa-circle-chevron-down"
+                id="mapIcon"
+                style="color: rgb(0, 0, 0)"
+              ></i>
+            </button>
+          </div>
+          <div class="mapContainer">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8400.070372241269!2d44.75533632734906!3d41.89558052442122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404466314b7d1361%3A0x73e129385b72a05b!2sIlia%20Chavchavadze%20Museum!5e0!3m2!1sen!2sge!4v1790335144018!5m2!1sen!2sge"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
           </div>
         </div>
-        <div class="actionRight">
-          <button class="mapToggleBtn">
-            <i
-              class="fa-solid fa-circle-chevron-down"
-              id="mapIcon"
-              style="color: rgb(0, 0, 0)"
-            ></i>
-          </button>
-        </div>
-        <div class="mapContainer">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8400.070372241269!2d44.75533632734906!3d41.89558052442122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404466314b7d1361%3A0x73e129385b72a05b!2sIlia%20Chavchavadze%20Museum!5e0!3m2!1sen!2sge!4v1790335144018!5m2!1sen!2sge"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-          ></iframe>
-        </div>
-      </div>
 
-
-    <!--ხელმოწერა-->
-      <div class="action">
-        <div class="actionLeft">
-          <h1>ხელისმოწერა</h1>
-          <div class="time">
-            <h2>16:00</h2>
-            <h5>მცხეთა, რესტორანი "არმაზის ხეობა"</h5>
+        <!--ხელმოწერა-->
+        <div class="action">
+          <div class="actionLeft">
+            <h1>ხელისმოწერა</h1>
+            <div class="time">
+              <h2>16:00</h2>
+              <h5>მცხეთა, რესტორანი "არმაზის ხეობა"</h5>
+            </div>
+          </div>
+          <div class="actionRight">
+            <button class="mapToggleBtn">
+              <i
+                class="fa-solid fa-circle-chevron-down"
+                id="mapIcon"
+                style="color: rgb(0, 0, 0)"
+              ></i>
+            </button>
+          </div>
+          <div class="mapContainer">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.518437287331!2d44.676467976323416!3d41.838666671246074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446563a435230f%3A0x2fc37827ca1c0d2d!2sArmazis%20Kheoba!5e0!3m2!1sen!2sge!4v1790335516922!5m2!1sen!2sge"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
           </div>
         </div>
-        <div class="actionRight">
-          <button class="mapToggleBtn">
-            <i
-              class="fa-solid fa-circle-chevron-down"
-              id="mapIcon"
-              style="color: rgb(0, 0, 0)"
-            ></i>
-          </button>
-        </div>
-        <div class="mapContainer">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.518437287331!2d44.676467976323416!3d41.838666671246074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446563a435230f%3A0x2fc37827ca1c0d2d!2sArmazis%20Kheoba!5e0!3m2!1sen!2sge!4v1790335516922!5m2!1sen!2sge"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-          ></iframe>
-        </div>
-      </div>
 
+        <!--რესტორანი-->
 
-    <!--რესტორანი-->
-
-      <div class="action">
-        <div class="actionLeft">
-          <h1>საქორწილო საღამო</h1>
-          <div class="time">
-            <h2>17:00</h2>
-            <h5>მცხეთა, რესტორანი "არმაზის ხეობა"</h5>
+        <div class="action">
+          <div class="actionLeft">
+            <h1>საქორწილო საღამო</h1>
+            <div class="time">
+              <h2>17:00</h2>
+              <h5>მცხეთა, რესტორანი "არმაზის ხეობა"</h5>
+            </div>
+          </div>
+          <div class="actionRight">
+            <button class="mapToggleBtn">
+              <i
+                class="fa-solid fa-circle-chevron-down"
+                id="mapIcon"
+                style="color: rgb(0, 0, 0)"
+              ></i>
+            </button>
+          </div>
+          <div class="mapContainer">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.518437287331!2d44.676467976323416!3d41.838666671246074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446563a435230f%3A0x2fc37827ca1c0d2d!2sArmazis%20Kheoba!5e0!3m2!1sen!2sge!4v1790335516922!5m2!1sen!2sge"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
           </div>
         </div>
-        <div class="actionRight">
-          <button class="mapToggleBtn">
-            <i
-              class="fa-solid fa-circle-chevron-down"
-              id="mapIcon"
-              style="color: rgb(0, 0, 0)"
-            ></i>
-          </button>
-        </div>
-        <div class="mapContainer">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.518437287331!2d44.676467976323416!3d41.838666671246074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446563a435230f%3A0x2fc37827ca1c0d2d!2sArmazis%20Kheoba!5e0!3m2!1sen!2sge!4v1790335516922!5m2!1sen!2sge"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-          ></iframe>
-        </div>
-      </div>
-    </article>
+      </article>
     </main>
 
     <script src="app.js"></script>
